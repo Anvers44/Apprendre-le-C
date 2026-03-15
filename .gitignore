@@ -1,0 +1,18 @@
+#Fichier Compilé
+*.o
+*.out
+*.exe
+
+#Exécutable 
+Bilel/exo*
+Lounes/exo*
+
+#Fichier système
+
+.DS_Store
+Thumb.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
