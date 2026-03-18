@@ -3,9 +3,6 @@
 *.out
 *.exe
 
-#Exécutable 
-Bilel/exo*
-Lounes/exo*
 
 #Fichier système
 
