@@ -9,8 +9,14 @@ int main (int argc, char *argv[])
   printf("***** Nombre Premier ****** \n");
   printf(" Choose a Number : ");
   scanf("%d",&n);
+
+  if (n <= 1)
+  {
+    printf("%d, n'est pas premier \n",n);
+    return 0;
+  }
   
-  for (int i = 2; i <= n-1; i++)
+  for (int i = 1; i <= n; i++)
   {
     if (n % i == 0)
     {
