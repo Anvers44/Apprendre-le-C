@@ -1,27 +1,24 @@
-int N1 = 0;
-int N2 = 0;
-int N3 = 0;
+#include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
-   printf("Veuillez introduire le premier nombre !\n");
-   scanf("%u", &N1);
-   printf("Veuillez introduire le second nombre !\n");
-   scanf("%u", &N2);
-   printf("Veuillez introduire le troisième nombre !\n");
-   scanf("%u", &N3);
+   int a = 0;
+   int b = 0;
 
-   if (N1 > N2 && N3)
-   {
-       printf("Le chiffre le plus grand est le premier : %d\n", N1);
+   printf("Veuillez introduire un nombre\n"); 
+   scanf("%d", &a);
+
+while (a > 0)
+{
+   b = b + a%10;
+   if (a > 10) {
+      b *= 10;
    }
-   else if (N2 > N3 && N1)
-   {
-       printf("Le chiffre le plus grand est le second : %d\n", N2);
-   }
-   else
-   {
-       printf("Le chiffre le plus grand est le troisième : %d\n", N3);
-   }
-   return 0;
+   a = a/10;
+}
+
+printf("%d\n", b);
+
+return 0;
 }
